@@ -1,5 +1,7 @@
 # Ensemble Models Project
 
+📓 [View the Jupyter Notebook](ensemble_model.ipynb)
+
 ## 📌 Overview
 This project explores and compares multiple ensemble learning methods on tabular data, including bagging, boosting, voting, and stacking.  
 It evaluates training and testing accuracy to understand generalization performance across models.
