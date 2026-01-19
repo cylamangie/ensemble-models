@@ -1,5 +1,3 @@
-
-
 # Ensemble Models Project
 
 ## 📌 Overview
@@ -20,19 +18,21 @@ This project demonstrates practical machine learning skills, model benchmarking,
 - **Extra Trees**: Randomized tree ensemble (bagging)
 - **AdaBoost**: Sequential boosting with weak learners
 - **Voting Classifier**: Combines multiple models via soft voting
-- **Stacking Classifier**: Meta-model blends outputs of base learners
+- **Stacking Classifier (2 models)**: Combines RF and GB with Logistic Regression
+- **Stacking Classifier (3 models)**: Combines RF, GB, ET with Logistic Regression
 
 ## 📊 Results
 
-| Model               | Training Accuracy | Testing Accuracy |
-|---------------------|-------------------|------------------|
-| Decision Tree       | 98.94%            | 33.93%           |
-| XGBoost             | 51.82%            | 49.21%           |
-| LightGBM            | 51.48%            | 49.49%           |
-| Extra Trees         | 98.94%            | 49.61%           |
-| AdaBoost            | 49.99%            | 49.91%           |
-| Voting Classifier   | 77.20%            | 50.17%           |
-| Stacking Classifier | (still running)   | (pending)        |
+| Model                        | Training Accuracy | Testing Accuracy | Runtime     |
+|-----------------------------|-------------------|------------------|-------------|
+| Decision Tree               | 98.94%            | 33.93%           | < 1 min     |
+| XGBoost                     | 51.82%            | 49.21%           | ~ 3 mins    |
+| LightGBM                    | 51.48%            | 49.49%           | ~ 2 mins    |
+| Extra Trees                 | 98.94%            | 49.61%           | < 1 min     |
+| AdaBoost                    | 49.99%            | 49.91%           | < 1 min     |
+| Voting Classifier           | 77.20%            | 50.17%           | ~ 15 mins   |
+| Stacking (RF + GB)          | 93.59%            | 50.16%           | 51 mins     |
+| Stacking (RF + GB + ET)     | 98.36%            | 50.30%           | 48 mins     |
 
 ## 🚀 How to Run
 ```bash
